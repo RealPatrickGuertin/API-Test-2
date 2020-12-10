@@ -23,5 +23,5 @@ npm i
 
 # run server
 npm start
-=======
+
 ### npx create-react-app my-app
