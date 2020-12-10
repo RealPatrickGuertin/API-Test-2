@@ -12,28 +12,25 @@ class App extends Component {
 callAPI() {
     fetch("http://localhost:9000/testAPI")
         .then(res => res.text())
-        .then(res => this.setState({ apiResponse: res }));
+        .then(res => this.setState({ apiResponse: res }))
+        .catch(err => err);
 }
 
 componentWillMount() {
     this.callAPI();
 }
   render () {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="App-intro">;{this.state.apiResponse}</p>
-      </header>
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-intro">{this.state.apiResponse}</h1>
+        </header>
+      </div>
+
       
-    </div>
-
-    
-  );
+    );
+  }
 }
-    
-
-}
-
 
 export default App;
