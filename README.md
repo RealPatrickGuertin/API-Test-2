@@ -3,8 +3,6 @@
 ## Install react app
 npm i -g create-react-app
 
-## Create react app
-
 # install dependencies
 npm i
 
@@ -22,5 +20,7 @@ npm i
 
 # run server
 npm start
-=======
-### npx create-react-app my-app
+
+# add the CORS package
+## navigate to api folder
+npm install --save cors
