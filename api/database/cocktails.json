@@ -1,0 +1,50 @@
+{
+    "cocktails": [
+        {
+            "name": "Mojito",
+            "ingredients": [
+                "light rum, lime juice, sugar, mint, soda water"
+            ],
+            "instructions": "Muddle mint leaves with sugar and lime juice. Add a splash of soda water and fill the glass with cracked ice. Pour the rum and top with soda water. Garnish and serve with straw."
+        },
+        {
+            "name": "Old Fashioned",
+            "ingredients": [
+                "bourbon, angostura bitters, sugar, water"
+            ],
+            "instructions": "Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist, and a cocktail cherry."
+        },
+        {
+            "name": "Long Island Tea",
+            "ingredients": [
+                "vodka",
+                "light rum",
+                "gin",
+                "tequila",
+                "lemon",
+                "coca cola"
+            ],
+            "instructions": ""
+        },
+        {
+            "name": "Whiskey Sour",
+            "ingredients": [
+                "blended whiskey",
+                "lemon juice",
+                "cherry",
+                "powdered sugar"
+            ],
+            "instructions": "Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
+        },
+        {
+            "name": "Margarita",
+            "ingredients": [
+                "tequila",
+                "triple sec",
+                "lime juice",
+                "salt"
+            ],
+            "instructions": "Shake with ice. Strain into chilled glass, gasrnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
+        }
+    ]
+}
