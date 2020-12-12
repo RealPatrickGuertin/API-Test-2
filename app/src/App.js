@@ -1,6 +1,8 @@
 import React, {Component} from "react";
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import Card from './components/card'
+import Header from './components/header'
+import cardData from './components/cardData'
 
 class App extends Component {
 
@@ -19,13 +21,27 @@ callAPI() {
 componentWillMount() {
     this.callAPI();
 }
-  render () {
+
+makeCardComponents() {
+  let cardComponents = cardData.map(joke => 
+    <Card 
+      key={joke.id} 
+      name={joke.name} 
+      ing={joke.ing} 
+      url={joke.url} 
+    />)
+    return cardComponents
+}
+  
+render() {
+  let cardComponents = this.makeCardComponents()
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-intro">{this.state.apiResponse}</h1>
-        </header>
+
+        <Header />
+
+        {cardComponents}
+
       </div>
     );
   }
