@@ -27,8 +27,6 @@ componentWillMount() {
           <h1 className="App-intro">{this.state.apiResponse}</h1>
         </header>
       </div>
-
-      
     );
   }
 }
