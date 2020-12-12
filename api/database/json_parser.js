@@ -1,8 +1,11 @@
 const json = require('./cocktails.json');
 
-
-var arr = []
-for(i = 0; i < json.cocktails.length; i++){
-arr.push(json.cocktails[i]);
+function jsonParse() {
+    var arr = []
+    for(let i = 0; i < json.cocktails.length; i++){
+        arr.push(json.cocktails[i]);
+    }
+    return arr
 }
-console.log(arr)
+
+export default jsonParse
