@@ -9,8 +9,8 @@ function Card(props) {
                 </div>
     <div class="flip-card-back">
       <h1>{props.name}</h1>
-      <p>Ing: {props.ing}</p>
-      <p></p>
+      <p>Ingredients: {props.ing}</p>
+      <p>Instructions: {props.ins}</p>
     </div>
   </div>
 </div>
