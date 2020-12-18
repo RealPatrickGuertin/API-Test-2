@@ -39,7 +39,7 @@ render() {
   let cardComponents = this.makeCardComponents()
     return (
       <div className="App">
-
+        <p className="Apicall">{this.state.apiResponse}</p>
         <Header />
 
         {cardComponents}
