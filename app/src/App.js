@@ -2,46 +2,55 @@ import React, {Component} from "react";
 import './styles/App.css';
 import Card from './components/card'
 import Header from './components/header'
-import cardData from './components/cardData'
+import cardData from './components/cardData.json'
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { apiResponse: [] };
+    this.state = { 
+      loading: true,
+      cocktail: null 
+    };
 }
 
-componentDidMount() {
-  fetch("http://localhost:9000/testAPI")
-  .then(res => res.json())
-  .then(
-    (result) => this.setState({ 
-    apiResponse: result 
-  }))
-  .catch(err => err);
+async componentDidMount() {
+  const url = "http://localhost:9000/testAPI"
+  const res = await fetch(url)
+  const data = await res.json()
+  console.log(data.cocktails) 
+  this.setState({cocktail: data.cocktails, loading: false})
+  console.log(this.state.cocktail[0])
 }
 
 makeCardComponents() {
-  //const arr = this.state.apiResponse
-  console.log(this.state.apiResponse)
-  let cardComponents = cardData.map(cocktail => 
-    <Card
-      key={cocktail.id} 
-      name={cocktail.name} 
-      ingredients={cocktail.ingredients} 
-      instructions={cocktail.instructions} 
-    />)
+  if(this.state.loading == false) {
+    let arr = this.state.cocktail
+    let cardComponents = arr.map(cocktail => 
+      <Card
+        name={cocktail.name} 
+        ingredients={cocktail.ingredients} 
+        instructions={cocktail.instructions} 
+        url={cocktail.url}
+      />)
     return cardComponents
+  }
+  
 }
   
 render() {
   let cardComponents = this.makeCardComponents()
     return (
       <div className="App">
-        <p className="Apicall">{this.state.apiResponse}</p>
-        <Header />
 
-        {cardComponents}
+        <Header />
+        {this.state.loading ? (
+          <div>loading...</div> 
+        ) : (
+          <div>
+            <div>{cardComponents}</div>
+          </div>
+        )}
 
       </div>
     );
