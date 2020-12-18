@@ -5,12 +5,12 @@ function Card(props) {
         <div className="flip-card">
             <div className="flip-card-inner">
                 <div className="flip-card-front">
-                    <img src={props.url} alt="x" />
+                  <h1>{props.name}</h1>
                 </div>
     <div className="flip-card-back">
       <h1>{props.name}</h1>
-      <p>Ingredients: {props.ing}</p>
-      <p>Instructions: {props.ins}</p>
+      <p>Ingredients: {props.ingredients}</p>
+      <p>Instructions: {props.instructions}</p>
     </div>
   </div>
 </div>
