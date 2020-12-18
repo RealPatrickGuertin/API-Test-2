@@ -23,11 +23,13 @@ componentWillMount() {
 }
 
 makeCardComponents() {
+  
   let cardComponents = cardData.map(joke => 
     <Card 
       key={joke.id} 
       name={joke.name} 
       ing={joke.ing} 
+      ins={joke.ins}
       url={joke.url} 
     />)
     return cardComponents
