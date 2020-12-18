@@ -10,11 +10,11 @@ function jsonToArray() {
     return arr
 }
 
-var arr = jsonToArray();
+var array = jsonToArray();
 
 
 router.get('/', function(req, res, next) {
-    res.send(arr.toString())
+    res.send(json)
 });
 
 module.exports = router
