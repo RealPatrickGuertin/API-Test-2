@@ -10,11 +10,11 @@ const cardData = [
         id: "2",
         name: "dad",
         ing: "thigh, feet",
-        ins: "x",
+        instructions: "x",
         url: "https://www.w3schools.com/css/img_chania.jpg"
     },
     {
-        id: "2",
+        id: "3",
         name: "son",
         ing: "chest, head",
         ins: "x",

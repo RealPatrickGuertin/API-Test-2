@@ -23,14 +23,13 @@ componentWillMount() {
 }
 
 makeCardComponents() {
-  
+  //const arr = this.state.apiResponse
   let cardComponents = cardData.map(joke => 
     <Card 
       key={joke.id} 
       name={joke.name} 
-      ing={joke.ing} 
-      ins={joke.ins}
-      url={joke.url} 
+      ingredients={joke.ing} 
+      instructions={joke.ins} 
     />)
     return cardComponents
 }
