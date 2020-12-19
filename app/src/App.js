@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import './styles/App.css';
 import Card from './components/card'
 import Header from './components/header'
-import cardData from './components/cardData.json'
 
 class App extends Component {
 
@@ -35,7 +34,6 @@ makeCardComponents() {
       />)
     return cardComponents
   }
-  
 }
   
 render() {
@@ -48,7 +46,7 @@ render() {
           <div>loading...</div> 
         ) : (
           <div>
-            <div>{cardComponents}</div>
+            <div style={{flex: "0 25%"}}>{cardComponents}</div>
           </div>
         )}
 

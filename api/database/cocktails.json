@@ -17,32 +17,21 @@
         {
             "name": "Long Island Tea",
             "ingredients": [
-                "vodka",
-                "light rum",
-                "gin",
-                "tequila",
-                "lemon",
-                "coca cola"
+                "vodka, light rum, gin, tequila, lemon, coca cola"
             ],
             "instructions": ""
         },
         {
             "name": "Whiskey Sour",
             "ingredients": [
-                "blended whiskey",
-                "lemon juice",
-                "cherry",
-                "powdered sugar"
+                "blended whiskey, lemon juice, cherry, powdered sugar"
             ],
             "instructions": "Shake with ice. Strain into chilled glass, garnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
         },
         {
             "name": "Margarita",
             "ingredients": [
-                "tequila",
-                "triple sec",
-                "lime juice",
-                "salt"
+                "tequila, triple sec, lime juice, salt"
             ],
             "instructions": "Shake with ice. Strain into chilled glass, gasrnish and serve. If served 'On the rocks', strain ingredients into old-fashioned glass filled with ice."
         }
